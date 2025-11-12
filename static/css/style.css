@@ -1,0 +1,4 @@
+body { background: #0b0b0b; color: #fff; }
+.video-wrap { width: 90%; margin: 0 auto; max-width: 1200px; }
+img { width: 100%; height: auto; border: 6px solid rgba(13,202,240,0.12); border-radius: 10px; }
+#statusBox { margin-top: 10px; }

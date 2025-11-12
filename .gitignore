@@ -1,0 +1,13 @@
+echo "venv/
+__pycache__/
+*.pyd
+*.dll
+*.hdf5
+*.lib
+*.so
+*.exe
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+" > .gitignore

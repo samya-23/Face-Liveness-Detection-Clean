@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Biometric Liveness Lock</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+  <div class="container text-center pt-5">
+    <h1 class="display-5">🔒 AI Biometric Liveness Detection</h1>
+    <p class="lead">Secure unlock with live face verification</p>
+
+    <div class="mt-4">
+      <button id="unlockBtn" class="btn btn-lg btn-success">🔓 Unlock</button>
+      <button id="lockBtn" class="btn btn-lg btn-danger d-none">🔒 Stop</button>
+      <a href="/dashboard" class="btn btn-secondary btn-lg ms-2">📊 Logs</a>
+    </div>
+
+    <div class="video-wrap mt-4">
+      <img id="video" src="{{ url_for('video_feed') }}" class="rounded mx-auto d-block" alt="video" />
+    </div>
+
+    <div id="statusBox" class="mt-3">
+      <h3 id="statusText">Locked — click Unlock to verify</h3>
+    </div>
+  </div>
+
+  <!-- Big result modal / overlay -->
+  <div id="resultOverlay" style="display:none; position:fixed; inset:0; background: rgba(0,0,0,0.7); z-index:9999;">
+    <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:80%; max-width:700px; text-align:center; background:#111; padding:30px; border-radius:12px;">
+      <h1 id="bigResult" style="font-size:56px; margin-bottom:20px;">REAL</h1>
+      <p id="bigResultMsg">You have been verified. Click proceed to enter the site.</p>
+      <div style="margin-top:20px;">
+        <a id="proceedBtn" class="btn btn-lg btn-primary" href="#" role="button">Proceed</a>
+        <button id="closeOverlay" class="btn btn-lg btn-light ms-2">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

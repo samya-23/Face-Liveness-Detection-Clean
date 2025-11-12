@@ -1,0 +1,12 @@
+imutils==0.5.4
+keras==2.15.0
+tensorflow==2.15.0
+opencv-python==4.9.0.80
+scikit-learn==1.5.2
+numpy==1.26.4
+h5py==3.10.0
+dlib-bin==20.0.0
+
+Flask
+pillow
+
