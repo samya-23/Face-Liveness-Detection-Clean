@@ -21,13 +21,13 @@ between actual faces and fake faces in realtime environment. The image frame cap
 
 ## File Description
 
-[main.py](https://github.com/samya-23/Face-Liveness-Detection/blob/master/main.py):
+[main.py](https://github.com/samya-23/Face-Liveness-Detection-Clean/blob/master/main.py):
 This file is the main script that would call the predictperson function present in the utilr function
 
-[training.py](https://github.com/samya-23/Face-Liveness-Detection/blob/master/livenessdetect/training.py):
+[training.py](https://github.com/samya-23/Face-Liveness-Detection-Clean/blob/master/livenessdetect/training.py):
 Along with the architecture script, this file includes various parameter tuning steps of the model.
 
-[model.py](https://github.com/samya-23/Face-Liveness-Detection/blob/master/livenessdetect/model.py) :
+[model.py](https://github.com/samya-23/Face-Liveness-Detection-Clean/blob/master/livenessdetect/model.py) :
 Has the main CNN architecture for training the dataset
 
 ## The Convolutional Neural Network
