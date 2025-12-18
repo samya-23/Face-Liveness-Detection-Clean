@@ -43,7 +43,7 @@ The ratio of training to testing bifuracation is **75:25**
 
 
 ```
-git clone https://github.com/samya-23/Face-Liveness-Detection.git
+git clone https://github.com/samya-23/Face-Liveness-Detection-Clean.git
 pip install -r requirements.txt
 python main.py
 ```
